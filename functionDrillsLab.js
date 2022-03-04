@@ -51,8 +51,12 @@ printName('Cameron')
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+function greeting (name) {
+  name = String(name)
+  console.log(`Hello, ${name}`)
+}
 
+greeting('Dave')
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -65,8 +69,15 @@ printName('Cameron')
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
+const compareNums = (num1, num2) => {
+  if (num1 > num2) {
+      return num1
+  } else {
+    return num2
+  }
 
+  const compareNums =(num1, num2) => num1 > num2 ? num1 : num2
+  
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
