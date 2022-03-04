@@ -22,8 +22,7 @@ helloWorld()
 /*
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
-
-const jsNinja = () => 'I am a JavaScript ninja!'
+ jsNinja = () => 'I am a JavaScript ninja.'
 
 
 ////////////////// PROBLEM 3 ////////////////////
@@ -51,7 +50,7 @@ printName('Cameron')
   Make sure to call your function and pass in an argument.
 */
 
-function greeting (name) {
+function greeting(name) {
   name = String(name)
   console.log(`Hello, ${name}`)
 }
@@ -69,14 +68,15 @@ greeting('Dave')
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-const compareNums = (num1, num2) => {
+const comparesNumbers = (num1, num2) => {
   if (num1 > num2) {
       return num1
   } else {
     return num2
   }
+}
 
-  const compareNums =(num1, num2) => num1 > num2 ? num1 : num2
+  
   
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -87,7 +87,8 @@ const compareNums = (num1, num2) => {
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+
+
 
 
 ////////////////// PROBLEM 7 ////////////////////
