@@ -22,7 +22,7 @@ helloWorld()
 /*
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
- jsNinja = () => 'I am a JavaScript ninja.'
+const jsNinja = () => 'I am a JavaScript ninja.'
 
 
 ////////////////// PROBLEM 3 ////////////////////
@@ -87,6 +87,15 @@ const comparesNumbers = (num1, num2) => {
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
+function add (num1, num2) {
+  num1 = +num1
+  num2 = +num2 
+  return num1 + num2 
+}
+
+let sum = add(10, 20)
+  
+
 
 
 
@@ -104,7 +113,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+// expression is the answer. A function expression has an equals sign.
 
 
 
@@ -115,11 +124,15 @@ const exclaim = function(str) {
   Uncomment the answer underneath.
 */
 
-const exclaimTwo = str => {
+const exclaimTwo = str => { 
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
+const exclaimThree = str => `${str.toUpperCase()}!!!'
+
+exclaimThree('toUpperCase') 
+
+// arrow is the type of function. Has the arrow symbol also has str string noted. Running a method to manipulate string to upper case.
 // declaration
 // expression
 
@@ -130,6 +143,12 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
+/* 
+  New line exclaimThree is a single line short hand of arrow function expression 
+  with a template literal $ delimited with back ticks allowing embedded 
+  expressions called substitutions. Useful in string interpolation. You need to 
+  call a function to make it work. Alone function will not run.
+  */  
 
 
 ////////////////// PROBLEM 9 ////////////////////
