@@ -128,7 +128,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-const exclaimThree = str => `${str.toUpperCase()}!!!'
+const exclaimThree = str => `${str.toUpperCase()}!!!`
 
 // arrow is the type of function. Has the arrow symbol also has str string noted. Running a method to manipulate string to upper case.
 // declaration
@@ -196,7 +196,19 @@ let nameGreeting = nameCheck('Steven')
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+function faveColorFinder(color) {
+  if (color === "red") {
+    return "red is a great color"
+  } else if (color === "green") {
+    return "green is a solid favorite color"
+  } else if (color === "black") {
+    return "so trendy"
+  } else {
+    return "you need to evaluate your favorite color choice"
+  }
+}
+
+let colorRating = faveColorFinder("red")
 
 
 ////////////////// PROBLEM 12 ////////////////////
@@ -207,7 +219,7 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the 'namesArr' array (above).
 */
 
-//CODE HERE
+
 
 
 ////////////////// PROBLEM 13 ////////////////////
