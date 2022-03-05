@@ -130,8 +130,6 @@ const exclaimTwo = str => {
 
 const exclaimThree = str => `${str.toUpperCase()}!!!'
 
-exclaimThree('toUpperCase') 
-
 // arrow is the type of function. Has the arrow symbol also has str string noted. Running a method to manipulate string to upper case.
 // declaration
 // expression
@@ -144,11 +142,11 @@ exclaimThree('toUpperCase')
 */
 
 /* 
-  New line exclaimThree is a single line short hand of arrow function expression 
-  with a template literal $ delimited with back ticks allowing embedded 
-  expressions called substitutions. Useful in string interpolation. You need to 
-  call a function to make it work. Alone function will not run.
-  */  
+New line exclaimThree is a single line short hand of arrow function expression 
+with a template literal $ delimited with back ticks allowing embedded 
+expressions called substitutions. Useful in string interpolation. You need to 
+call a function to make it work. Alone function will not run.
+*/  
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -163,7 +161,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+// declaration is the answer. This is the traditional way to write functions that we've been using.
 // expression
 
 
@@ -172,12 +170,21 @@ function exclaimFour(str) {
   Write a function called nameCheck that takes in a name parameter.
   nameCheck should check if the name equals 'Steven'. If it does, return 'What is up Steven?'
   If the name parameter is equal to Bryan, return 'Hey Bryan!'
-  If the name parameter is anything else, return 'Cool name, NAMEPARAM' (with NAMEPARAM being the value of the name parameter being passed in).
+  If the name parameter is anything else, return 'Cool name, name parameter' (with name parameter being the value of the name parameter being passed in).
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+function nameCheck(name) {
+  if (name === "Steven") {
+    return "What's is up Steven?"
+  } else if (name === "Bryan") {
+    return "Hey Bryan!"
+  } else {
+    return `Cool name, ${name}`
+  }
+}
 
+let nameGreeting = nameCheck('Steven')
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -197,7 +204,7 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 /*
   Create a function called printAllNames that takes in a single argument (an array of names).
   Using a for loop, iterate over that array and console log each name.
-  Call the function, passing in the `namesArr` array (above).
+  Call the function, passing in the 'namesArr' array (above).
 */
 
 //CODE HERE
@@ -208,7 +215,7 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Create a function called thatsOdd that takes in a single argument (a number).
   Using conditional logic, if the number is even, return 'That's not odd!'
   Otherwise, return 'That is odd indeed!'
-  Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
+  Outside the function, create a variable called 'oddChecker' and set it equal to your function invoked, making sure to pass in an argument.
 */
 
 //CODE HERE
@@ -219,9 +226,9 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 /*
     Write a one line arrow function called 'bestMovie' that takes in one parameter,
     which will be a string of a movie title. 
-    The function should return the string: 'MOVEIEPARAM is the best movie ever!'. 
-    For example, if we passed in 'Sharknado', 
-    we would expect the function to return 'Sharknado is the best movie ever!'
+    The function should return the string: 'movie parameter' is the best movie ever!'. 
+    For example, if we passed in 'Toy Story', 
+    we would expect the function to return 'Toy Story' is the best movie ever!'
 */
 
 //CODE HERE
@@ -235,7 +242,7 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Then, loop over the passed in arr parameter, and check to see if the number in the array is GREATER than 100. 
   If it is, push 'big' as a string to the answers array. 
   If the number is LESS than or EQUAL to 100, push 'small' as a string to the answers array. 
-  Return the answers array inside of the function to a variable called `arrayEvaluator`.
+  Return the answers array inside of the function to a variable called 'arrayEvaluator'.
 */
 
 //CODE HERE
@@ -275,8 +282,9 @@ let sampleString = "Hi, my name is Kylo."
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
-  Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
-  Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
+  Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold.
+   Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
+  Create a variable called 'totalFrogs' and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
 
 //CODE HERE
@@ -284,7 +292,9 @@ let sampleString = "Hi, my name is Kylo."
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
-  You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in the previous problem (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
+  You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... However,
+  you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in the previous problem (give it the same name,
+    just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called 'totalFrogs2'.
 */
 
 //CODE HERE
@@ -293,7 +303,8 @@ let sampleString = "Hi, my name is Kylo."
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 /*
-  Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
+  Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order.
+  The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, 'arrayIsAscending' and set it equal to your function invoked. Use the sample array to test this function.
 */
 
 //CODE HERE
