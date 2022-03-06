@@ -219,7 +219,15 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the 'namesArr' array (above).
 */
 
+function printAllNames(names) {
+  for (let i = 0; i < names.length; i++) {
+    console.log (names[i])
+  }
+}
 
+printAllNames(namesArr)
+
+// Oops didn't finish. Print each name in the array starting with index 0 and ending at the length of the array 4.
 
 
 ////////////////// PROBLEM 13 ////////////////////
@@ -230,7 +238,16 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Outside the function, create a variable called 'oddChecker' and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-//CODE HERE
+function thatsOdd(number) {
+  if (number % 2 === 0) {
+    return "That's not odd" 
+}   else {
+    return "That's is odd indeed!"
+  }
+}
+
+let oddChecker = thatsOdd(3) 
+// remember that the % sign is divide and dividing number by two is even.
 
 
 ////////////////// PROBLEM 14 ////////////////////
