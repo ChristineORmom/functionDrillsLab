@@ -260,9 +260,15 @@ let oddChecker = thatsOdd(3)
     we would expect the function to return 'Toy Story' is the best movie ever!'
 */
 
-//CODE HERE
+const bestMovie = title => {
+  return title + 'is the best movie ever!'
+}
 
+const bestMovie = title => `${title} is the best movie ever!`
 
+// The first part of code with two lines is a traditional arrow function. A return is and end result ot what you want to know at the end of the function.
+// The second part of code is a short hand arrow function that is useful if you only have one parameter. 
+// Both codes will not provide anything un till you pass a title like 'Toy Story' through it.
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 /* 
