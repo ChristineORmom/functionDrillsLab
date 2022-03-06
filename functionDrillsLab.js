@@ -292,6 +292,7 @@ function bigOrSmall(arr) {
 }
 
 let arrayEvaluator = bigOrSmall(bigOrSmallArray)
+// editing array using .push() allows you to add an item to the end of an array.
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -311,6 +312,8 @@ function theEliminator(contestants, loser) {
 }
 
 let updatedContestants = theEliminator(contestants, loser)
+// You are editing array with .splice() to single out loser.  
+
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
 /*
@@ -318,8 +321,13 @@ let sampleString = "Hi, my name is Kylo."
   Invoke the function, passing in the sampleString (above).
 */
 
-//CODE HERE
+function makeUppercase(str) {
+  console.log(str.toUpperCase())
+}
 
+makeUppercase(sampleString)
+
+// Simple manipulation changing original string to uppercase using str.toUpperCase(). Will not affect original string just edit.
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -332,6 +340,17 @@ let sampleString = "Hi, my name is Kylo."
   return 'must provide a valid email address'
 */
 
+function emailCheck(email) {
+email = String(email).trim()
+
+  if (email.includes('@')) {
+    return 'email verified'
+  } else {
+    return 'must provide a valid email address'
+  }
+}
+// A traditional function with return outcome.
+// Manipulating string by trimming whitespace off beginning and end of a string. 
 ////////////////// PROBLEM 19 ////////////////////
 /*
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold.
