@@ -358,9 +358,12 @@ email = String(email).trim()
   Create a variable called 'totalFrogs' and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
 
-//CODE HERE
+function chocolatePurchaser(gold) {
+  return gold / 3
+}
 
-
+let totalChocolates = chocolatePurchaser(100)
+//Traditional function with return outcome. Not an even number. Not an even amount of items you wish to buy.
 ////////////////// PROBLEM 20 ////////////////////
 /*
   You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... However,
@@ -368,9 +371,17 @@ email = String(email).trim()
     just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called 'totalFrogs2'.
 */
 
-//CODE HERE
+function chocolatePurchaser2(gold) {
+  if (gold % 3 === 0) {
+    return gold / 3
+  }else if ((gold - 1) % 3 === 0) {
+    return (gold - 1) / 3
+  }
+}
 
-
+let totalChocolates2 = chocolatePurchaser(100) 
+//Doing the math to figure out how many chocolates you can buy for the gold you have. Making sure you divide into a number with no remainders. 
+//If you can divide 3 into the amount you have and git and even gold amount.
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 /*
