@@ -73,7 +73,7 @@ const comparesNumbers = (num1, num2) => {
       return num1
   } else {
     return num2
-  }
+  }s
 }
 
   
@@ -270,6 +270,7 @@ const bestMovie = title => `${title} is the best movie ever!`
 // The second part of code is a short hand arrow function that is useful if you only have one parameter. 
 // Both codes will not provide anything un till you pass a title like 'Toy Story' through it.
 ////////////////// PROBLEM 15 ////////////////////
+
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 /* 
   Create a function called 'bigOrSmall' that takes in one parameter, 'arr',  which will be an array of numbers. 
@@ -291,6 +292,7 @@ function bigOrSmall(arr) {
 }
 
 let arrayEvaluator = bigOrSmall(bigOrSmallArray)
+
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
 let loser = 'Glimmer'
@@ -299,9 +301,16 @@ let loser = 'Glimmer'
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-//CODE HERE
+function theEliminator(contestants, loser) {
+  for (let i = 0; i < contestants.length; i++) {
+    if (contestants[i] === loser) {
+      contestants.splice(i, 1)
+    }
+  }
+  return contestants
+}
 
-
+let updatedContestants = theEliminator(contestants, loser)
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
 /*
