@@ -389,8 +389,20 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
   The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, 'arrayIsAscending' and set it equal to your function invoked. Use the sample array to test this function.
 */
 
-//CODE HERE
+function CheckArrayAscending(arr) {
+  let comparisonValue = arr[0]
+  for (let i = 1; i < arr.length - 1; i++) {
+    if (arr[i] <= comparisonValue) {
+      return false
+    } else {
+      comparisonValue = arr[i]
+    }
+  }
+  return true
+}
 
+let arrayIsAscending = CheckArrayAscending(sampleArray)
+// Using a for loop to iterate over an array. In this case is the sample array in ascending oder. 
 
 ////////////////// PROBLEM 22 ////////////////////
 
